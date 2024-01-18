@@ -11,10 +11,10 @@ const StyledInput = styled.input<InputProps>`
       props.disabled
         ? "#e4e3ea"
         : props.error
-        ? "#a9150b"
-        : props.success
-        ? "#067d68"
-        : "#353637"};
+          ? "#a9150b"
+          : props.success
+            ? "#067d68"
+            : "#353637"};
   background-color: #fff;
   &:focus {
     border: solid 2px #1b116e;
@@ -34,9 +34,9 @@ const StyledMessage = styled.div<InputProps>`
 `;
 
 const StyledText = styled.p<InputProps>`
-    margin: 0;
-    color: ${(props) =>
-            props.disabled ? "#e4e3ea" : props.error ? "#a9150b" : "#080808"};
+  margin: 0;
+  color: ${(props) =>
+    props.disabled ? "#e4e3ea" : props.error ? "#a9150b" : "#080808"};
 `;
 
 const Input: FC<InputProps> = ({
@@ -65,7 +65,8 @@ const Input: FC<InputProps> = ({
         error={error}
         success={success}
         placeholder={placeholder}
-        {...props}></StyledInput>
+        {...props}
+      ></StyledInput>
       <StyledMessage>
         <StyledText error={error}>{message}</StyledText>
       </StyledMessage>

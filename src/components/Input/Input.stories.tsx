@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Input from "./Input";
-import {InputProps} from "./Input.types.ts";
+import { InputProps } from "./Input.types.ts";
 
 const meta: Meta<typeof Input> = {
   component: Input,
