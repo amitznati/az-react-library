@@ -1,17 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import {Input, Button, Header} from 'az-react-library'
-import 'az-react-library/dist/style.css'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import { Input, Button, Header } from "az-react-library";
+import "az-react-library/dist/style.css";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
       <div>
-          <Header onLogin={() => {}} onLogout={()=>{}} onCreateAccount={()=>{}} />
+        <Header
+          onLogin={() => {}}
+          onLogout={() => {}}
+          onCreateAccount={() => {}}
+        />
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -21,8 +25,8 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-          <Input label="test" />
-          <Button label="test" primary />
+        <Input label="test" />
+        <Button label="test" primary />
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -34,7 +38,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
