@@ -1,0 +1,29 @@
+{
+  "name": "example-consumer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "file:../node_modules/react",
+    "react-dom": "file:../node_modules/react-dom",
+    "az-react-library": "file:../"
+  },
+  "devDependencies": {
+    "@types/react": "file:../node_modules/@types/react",
+    "@types/react-dom": "file:../node_modules/@types/react-dom",
+    "@typescript-eslint/eslint-plugin": "file:../node_modules/@typescript-eslint/eslint-plugin",
+    "@typescript-eslint/parser": "file:../node_modules/@typescript-eslint/parser",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "file:../node_modules/eslint",
+    "eslint-plugin-react-hooks": "file:../node_modules/eslint-plugin-react-hooks",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "file:../node_modules/typescript",
+    "vite": "file:../node_modules/vite"
+  }
+}
